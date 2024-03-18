@@ -3,95 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <title>Мій сайт</title>
+    <style>
+        /* По класу */
+        .main-header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* По id */
+        #main-heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Груповий */
+        .first-section,
+        .second-section {
+            margin-top: 20px;
+        }
+
+        /* Додаткові властивості для блоків */
+        .first-section {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .second-section {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Інші властивості */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header></header>
-    <h1>Мій найкращий сайт</h1>
-    <section>
-        <h2><u>Перша частина сайту</u></h2>
-        <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, mollitia.</i></p>
-        <div>
-            <img src="img/img1.webp" alt="img1">
-        </div>
-        <div><p>Inner block</p></div>
-        <div><p>Inner block</p></div>
-        <table>
-            <tr>
-                <th>Заголовок 1</th>
-                <th>Заголовок 2</th>
-            </tr>
-            <tr>
-                <td>Комірка 1.1</td>
-                <td>Комірка 1.2</td>
-            </tr>
-            <tr>
-                <td>Комірка 2.1</td>
-                <td>Комірка 2.2</td>
-            </tr>
-        </table>
-        <ul>
-            <li>Елемент 1</li>
-            <li>Елемент 2</li>
-            <li>Елемент 3</li>
-        </ul>
-
-
-    </section>
-    <section>
-        <h2><u>Друга частина сайту</u></h2>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, laboriosam!<br></span>
-        <img src="img/img2.webp" alt="img2">
-        <div><p>Inner block</p></div>
-        <div><p>Inner block</p></div>
-        <p>Абзац зі спецсимволами:&#9786; &amp; &#9829; &gt; &lt;</p>
-        <ol>
-            <li>Елемент 1</li>
-            <li>Елемент 2</li>
-            <li>Елемент 3</li>
-        </ol>
-
-    </section>
-    <section>
-        <form>
-            <label for="fname">Ім'я:</label>
-            <input type="text" id="fname" name="fname">
-        </form>
-        <form>
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password">
-        </form>
-        <form>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Чоловіча</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Жіноча</label><br>
-        </form>
-        <form>
-            <label for="cars">Виберіть авто:</label>
-            <select id="cars" name="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
-        </form>
-        <form>
-            <input type="submit" value="Відправити">
-        </form>
-        <form>
-            <label for="message">Повідомлення:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea>
-        </form>
-        <form>
-            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
-            <label for="subscribe">Підписатися на розсилку</label><br>
-        </form>
-
-    </section>
-    <footer>
-        <p><a href="#">Посилання на сайт 1</a></p>
-        <p><a href="#">Посилання на сайт 2</a></p>
-    </footer>
-
+<header class="main-header"></header>
+<h1 id="main-heading">Мій найкращий сайт</h1>
+<section class="first-section">
+    <h2><u>Перша частина сайту</u></h2>
+    <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, mollitia.</i></p>
+    <div>
+        <img src="img/img1.webp" alt="img1">
+    </div>
+    <div><p>Inner block</p></div>
+    <div><p>Inner block</p></div>
+    <table>
+        <tr>
+            <th>Заголовок 1</th>
+            <th>Заголовок 2</th>
+        </tr>
+        <tr>
+            <td>Комірка 1.1</td>
+            <td>Комірка 1.2</td>
+        </tr>
+        <tr>
+            <td>Комірка 2.1</td>
+            <td>Комірка 2.2</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Елемент 1</li>
+        <li>Елемент 2</li>
+        <li>Елемент 3</li>
+    </ul>
+</section>
+<section class="second-section">
+    <h2><u>Друга частина сайту</u></h2>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, laboriosam!<br></span>
+    <img src="img/img2.webp" alt="img2">
+    <div><p>Inner block</p></div>
+    <div><p>Inner block</p></div>
+    <p>Абзац зі спецсимволами:&#9786; &amp; &#9829; &gt; &lt;</p>
+    <ol>
+        <li>Елемент 1</li>
+        <li>Елемент 2</li>
+        <li>Елемент 3</li>
+    </ol>
+</section>
+<section>
+    <form>
+        <label for="fname">Ім'я:</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+    </form>
+    <form>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловіча</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label><br>
+    </form>
+    <form>
+        <label for="cars">Виберіть авто:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </form>
+    <form>
+        <input type="submit" value="Відправити">
+    </form>
+    <form>
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    </form>
+    <form>
+        <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+        <label for="subscribe">Підписатися на розсилку</label><br>
+    </form>
+</section>
+<footer id="main-footer">
+    <p><a href="#">Посилання на сайт 1</a></p>
+    <p><a href="#">Посилання на сайт 2</a></p>
+</footer>
 </body>
 </html>
